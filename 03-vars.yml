@@ -13,8 +13,8 @@
     - name : print URL
       ansible.builtin.debug:
         msg: url - {{ URL }}
-        vars:
-          URL: play.example.com
+      vars:
+        URL: play.example.com
 
 
 
