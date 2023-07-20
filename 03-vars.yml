@@ -8,14 +8,3 @@
           msg : url - {{ URL }}
 
 
-- name : Demo on Task level variable
-  hosts : all
-  tasks :
-    -name : print URL
-    ansible.built.in.debug:
-      msg: url - {{ URL }}
-      vars:
-        URL: play.example.com
-
-
-
