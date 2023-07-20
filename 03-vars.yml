@@ -7,6 +7,15 @@
         ansible.builtin.debug:
           msg : url - {{ URL }}
 
+- name : Demo on play level variable
+  hosts : all
+  vars_file :
+    - exvars.yml
+  tasks:
+    - name : print URL
+      ansible.builtin.debug:
+        msg : url - {{ URL }}
+
 - name : Demo on Task level variable
   hosts : all
   tasks :
