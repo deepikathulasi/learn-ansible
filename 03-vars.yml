@@ -11,7 +11,7 @@
   hosts : all
   tasks :
     - name : print URL
-      ansible.built.in.debug:
+      ansible.builtin.debug:
         msg: url - {{ URL }}
         vars:
           URL: play.example.com
