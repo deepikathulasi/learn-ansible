@@ -9,8 +9,8 @@
 
 - name : Demo on play level variable
   hosts : all
-  vars_file :
-    - exvars.yml
+  vars_files:
+    - ex-vars.yml
   tasks:
     - name : print URL
       ansible.builtin.debug:
