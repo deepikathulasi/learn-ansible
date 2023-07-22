@@ -6,6 +6,5 @@
     - name: deepika
       ansible.builtin.debug:
         msg: {{ URL }}
-        msg2 : deepika - URL
 
 
