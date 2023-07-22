@@ -25,6 +25,13 @@
       vars:
         URL: play.example.com
 
+- name : variable from roles
+  hosts : all
+  vars:
+    URL_PLAY : play.example.com
+  roles :
+    - sample
+
 
 
 
