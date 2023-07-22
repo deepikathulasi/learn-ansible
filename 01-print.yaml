@@ -7,4 +7,8 @@
       ansible.builtin.debug:
         msg: "{{ URL }}"
 
+- name : demo o variable from roles
+  host : all
+  role:
+    - sample
 
