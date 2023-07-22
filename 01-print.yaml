@@ -1,8 +1,11 @@
 - name: Demo on first playbook
   hosts : all
+  vars:
+    URL : google.com
   tasks:
     - name: deepika
       ansible.builtin.debug:
-        msg: Hello World
+        msg: {{ URL }}
+        msg2 : deepika - URL
 
 
