@@ -1,5 +1,5 @@
-- name : print hello world
+- name : print variable from role
   ansible.builtin.debug :
-    msg : " {{ URL }}"
+    msg : URL - {{ URL }}
 
 
