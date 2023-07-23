@@ -25,10 +25,10 @@
       vars:
         URL: play.example.com
 
-- name : variable from roles
-  hosts : all
-  roles :
-    - sample
+##- name : variable from roles
+  ##hosts : all
+  ##roles :
+    ##- sample
 
 - name: Demo on register variables
   hosts: all
