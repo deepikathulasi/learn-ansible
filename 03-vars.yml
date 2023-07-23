@@ -30,14 +30,14 @@
   roles :
     - sample
 
-- name : Demo on register variables
-  hosts : all
-  tasks :
-    - name : run uptime shell command
+- name: Demo on register variables
+  hosts: all
+  tasks:
+    - name: run uptime shell command
       ansible.builtin.shell: uptime
-      register : output
-    - name : print output
-      ansible.built.in.debug:
+      register: output
+    - name: print output
+      ansible.builtin.debug:
           msg: "{{ output }}"
 
 
